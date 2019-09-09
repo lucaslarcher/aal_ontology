@@ -1,0 +1,1255 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lucas/ontologies/2019/7/AAL"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lucas/ontologies/2019/7/AAL">
+    <Prefix name="" IRI="http://www.semanticweb.org/lucas/ontologies/2019/7/AAL#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Accelerometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bathroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bedroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BloodOxygenation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BloodPressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Canteen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GPS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeisureRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicalTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nursery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReaderRFID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartFitnessBracelet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Token"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#alertSymptomsToMedicalStaff"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#environmentToDoExercises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#medicalTeamAttentPatient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#medicalTeamIsLocatedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#medicalTeamWasAlertedOfTheSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patientHasASymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patientIsWithHighBloodPressure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patientIsWithLowBloodPressure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patientIsWithStandartBloodPressure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patientIsinEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patientWithGodBloodOxygenation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patientWithLowBloodOxygenation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patientsSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#peacefulEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recognizeSensorInThisEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sensorInEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sensorMeasure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sensorOnPatient"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blood_oxygenation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#diastolic_blood_pressure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#save_info"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#systolic_blood_pressure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MT1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RFIDB1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#S1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#S2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SFB1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SFB2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Accelerometer"/>
+        <Class IRI="#Sensors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bathroom"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bedroom"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BloodOxygenation"/>
+        <Class IRI="#Sensors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BloodPressure"/>
+        <Class IRI="#Sensors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Canteen"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GPS"/>
+        <Class IRI="#Sensors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gym"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeisureRoom"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicalTeam"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedDevice"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nursery"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReaderRFID"/>
+        <Class IRI="#NamedDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensors"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartFitnessBracelet"/>
+        <Class IRI="#NamedDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Token"/>
+        <Class IRI="#NamedDevice"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Bathroom"/>
+        <Class IRI="#Bedroom"/>
+        <Class IRI="#Canteen"/>
+        <Class IRI="#Gym"/>
+        <Class IRI="#LeisureRoom"/>
+        <Class IRI="#Nursery"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Device"/>
+        <Class IRI="#Environment"/>
+        <Class IRI="#People"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MedicalTeam"/>
+        <Class IRI="#Patient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NamedDevice"/>
+        <Class IRI="#Sensors"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ReaderRFID"/>
+        <Class IRI="#SmartFitnessBracelet"/>
+        <Class IRI="#Token"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#MedicalTeam"/>
+        <NamedIndividual IRI="#MT1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#environmentToDoExercises"/>
+        <NamedIndividual IRI="#G1"/>
+        <NamedIndividual IRI="#G1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patientHasASymptom"/>
+        <NamedIndividual IRI="#P1"/>
+        <NamedIndividual IRI="#S1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patientHasASymptom"/>
+        <NamedIndividual IRI="#P2"/>
+        <NamedIndividual IRI="#S2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#recognizeSensorInThisEnvironment"/>
+        <NamedIndividual IRI="#RFIDB1"/>
+        <NamedIndividual IRI="#T1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sensorInEnvironment"/>
+        <NamedIndividual IRI="#RFIDB1"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sensorOnPatient"/>
+        <NamedIndividual IRI="#SFB1"/>
+        <NamedIndividual IRI="#P1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sensorOnPatient"/>
+        <NamedIndividual IRI="#SFB2"/>
+        <NamedIndividual IRI="#P2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sensorOnPatient"/>
+        <NamedIndividual IRI="#T1"/>
+        <NamedIndividual IRI="#P1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#blood_oxygenation"/>
+        <NamedIndividual IRI="#SFB1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">94</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diastolic_blood_pressure"/>
+        <NamedIndividual IRI="#SFB1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#systolic_blood_pressure"/>
+        <NamedIndividual IRI="#SFB1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#blood_oxygenation"/>
+        <NamedIndividual IRI="#SFB2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diastolic_blood_pressure"/>
+        <NamedIndividual IRI="#SFB2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#systolic_blood_pressure"/>
+        <NamedIndividual IRI="#SFB2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">14</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#patientWithGodBloodOxygenation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#patientWithLowBloodOxygenation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#patientsSymptom"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#sensorInEnvironment"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#sensorMeasure"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#sensorOnPatient"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#alertSymptomsToMedicalStaff"/>
+        <ObjectProperty IRI="#medicalTeamWasAlertedOfTheSymptom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#patientHasASymptom"/>
+        <ObjectProperty IRI="#patientsSymptom"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#alertSymptomsToMedicalStaff"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#environmentToDoExercises"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#medicalTeamAttentPatient"/>
+        <Class IRI="#MedicalTeam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#medicalTeamIsLocatedAt"/>
+        <Class IRI="#MedicalTeam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#medicalTeamWasAlertedOfTheSymptom"/>
+        <Class IRI="#MedicalTeam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patientHasASymptom"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patientIsWithHighBloodPressure"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patientIsWithLowBloodPressure"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patientIsWithStandartBloodPressure"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patientIsinEnvironment"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patientWithGodBloodOxygenation"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patientWithLowBloodOxygenation"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patientsSymptom"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#peacefulEnvironment"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#recognizeSensorInThisEnvironment"/>
+        <Class IRI="#ReaderRFID"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sensorInEnvironment"/>
+        <Class IRI="#NamedDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sensorMeasure"/>
+        <Class IRI="#SmartFitnessBracelet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sensorOnPatient"/>
+        <Class IRI="#NamedDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#alertSymptomsToMedicalStaff"/>
+        <Class IRI="#MedicalTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#environmentToDoExercises"/>
+        <Class IRI="#Gym"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#medicalTeamAttentPatient"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#medicalTeamIsLocatedAt"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#medicalTeamWasAlertedOfTheSymptom"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patientHasASymptom"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patientIsWithHighBloodPressure"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patientIsWithLowBloodPressure"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patientIsWithStandartBloodPressure"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patientIsinEnvironment"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patientWithGodBloodOxygenation"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patientWithLowBloodOxygenation"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patientsSymptom"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#peacefulEnvironment"/>
+        <ObjectUnionOf>
+            <Class IRI="#Bathroom"/>
+            <Class IRI="#Bedroom"/>
+            <Class IRI="#Canteen"/>
+            <Class IRI="#LeisureRoom"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#peacefulEnvironment"/>
+        <ObjectComplementOf>
+            <Class IRI="#Gym"/>
+        </ObjectComplementOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#recognizeSensorInThisEnvironment"/>
+        <Class IRI="#Token"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sensorInEnvironment"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sensorOnPatient"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#blood_oxygenation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#diastolic_blood_pressure"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#save_info"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#systolic_blood_pressure"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blood_oxygenation"/>
+        <Class IRI="#SmartFitnessBracelet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#diastolic_blood_pressure"/>
+        <Class IRI="#SmartFitnessBracelet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#systolic_blood_pressure"/>
+        <Class IRI="#SmartFitnessBracelet"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#blood_oxygenation"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#diastolic_blood_pressure"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#save_info"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#systolic_blood_pressure"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>patient_location</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Environment"/>
+                <Variable IRI="#e"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Token"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#ReaderRFID"/>
+                <Variable IRI="#rrfid"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sensorInEnvironment"/>
+                <Variable IRI="#rrfid"/>
+                <Variable IRI="#e"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sensorOnPatient"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#recognizeSensorInThisEnvironment"/>
+                <Variable IRI="#rrfid"/>
+                <Variable IRI="#t"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientIsinEnvironment"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#e"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>alert1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#MedicalTeam"/>
+                <Variable IRI="#mt"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientIsWithHighBloodPressure"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#alertSymptomsToMedicalStaff"/>
+                <Variable IRI="#s"/>
+                <Variable IRI="#mt"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#medicalTeamAttentPatient"/>
+                <Variable IRI="#mt"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>alert2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#MedicalTeam"/>
+                <Variable IRI="#mt"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientIsWithLowBloodPressure"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#alertSymptomsToMedicalStaff"/>
+                <Variable IRI="#s"/>
+                <Variable IRI="#mt"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#medicalTeamAttentPatient"/>
+                <Variable IRI="#mt"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>alert3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#MedicalTeam"/>
+                <Variable IRI="#mt"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientWithLowBloodOxygenation"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#alertSymptomsToMedicalStaff"/>
+                <Variable IRI="#s"/>
+                <Variable IRI="#mt"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#medicalTeamAttentPatient"/>
+                <Variable IRI="#mt"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>good_blood_oxygenation</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SmartFitnessBracelet"/>
+                <Variable IRI="#sfb"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sensorOnPatient"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#blood_oxygenation"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#bo"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="#bo"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">95</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientHasASymptom"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientWithGodBloodOxygenation"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>low_blood_oxygenation</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SmartFitnessBracelet"/>
+                <Variable IRI="#sfb"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sensorOnPatient"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#blood_oxygenation"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#bo"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="#bo"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">95</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientHasASymptom"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientWithLowBloodOxygenation"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>standard_blood_pressure</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SmartFitnessBracelet"/>
+                <Variable IRI="#sfb"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sensorOnPatient"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#diastolic_blood_pressure"/>
+                <Variable IRI="#dfb"/>
+                <Variable IRI="#dbp"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="#dbp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.5</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="#dbp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6.0</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#systolic_blood_pressure"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#sbp"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="#sbp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13.0</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="#sbp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9.0</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientHasASymptom"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientIsWithStandartBloodPressure"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>high_blood_pressure_diastolic</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SmartFitnessBracelet"/>
+                <Variable IRI="#sfb"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sensorOnPatient"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#diastolic_blood_pressure"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#dbp"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="#dbp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.5</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientHasASymptom"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientIsWithHighBloodPressure"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>low_blood_pressure_diastolic</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SmartFitnessBracelet"/>
+                <Variable IRI="#sfb"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sensorOnPatient"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#diastolic_blood_pressure"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#dbp"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="#dbp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientHasASymptom"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientIsWithLowBloodPressure"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>high_blood_pressure_systolic</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SmartFitnessBracelet"/>
+                <Variable IRI="#sfb"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sensorOnPatient"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#systolic_blood_pressure"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#sbp"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="#sbp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13.0</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientHasASymptom"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientIsWithHighBloodPressure"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>low_blood_pressure_systolic</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SmartFitnessBracelet"/>
+                <Variable IRI="#sfb"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sensorOnPatient"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#systolic_blood_pressure"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#sbp"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="#sbp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientHasASymptom"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientIsWithLowBloodPressure"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>save_info_case1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SmartFitnessBracelet"/>
+                <Variable IRI="#sfb"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientIsWithHighBloodPressure"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sensorOnPatient"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#save_info"/>
+                <Variable IRI="#sfb"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>save_info_case2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SmartFitnessBracelet"/>
+                <Variable IRI="#sfb"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="#s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientWithLowBloodOxygenation"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sensorOnPatient"/>
+                <Variable IRI="#sfb"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#save_info"/>
+                <Variable IRI="#sfb"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
